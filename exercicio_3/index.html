@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Notícias do Dia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header.portal-header {
+            border-bottom: 3px solid #0d6efd;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .noticia-item {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 22px;
+            margin-bottom: 22px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .noticia-categoria {
+            display: inline-block;
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            font-size: 0.85em;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .noticia-titulo {
+            font-size: 1.4em;
+            margin: 8px 0;
+            color: #111827;
+        }
+        .noticia-meta {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-bottom: 12px;
+        }
+        .noticia-resumo {
+            font-size: 1em;
+            line-height: 1.5;
+            color: #4b5563;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="portal-header">
+            <h1>Portal Notícias do Dia</h1>
+            <p>Jornalismo independente, ágil e conectado com o mundo</p>
+        </header>
+
+        <main id="feed-noticias">
+            <article class="noticia-item">
+                <span class="noticia-categoria">Tecnologia</span>
+                <h2 class="noticia-titulo">Avanços em Modelos de Linguagem Transformam Automação de Código</h2>
+                <div class="noticia-meta">
+                    Publicado em: <time class="noticia-data" datetime="2026-10-08">08/10/2026</time> | 
+                    Por: <span class="noticia-autor">Mariana Silveira</span>
+                </div>
+                <p class="noticia-resumo">
+                    Novas ferramentas com agentes autônomos aumentam a produtividade dos desenvolvedores de software, permitindo foco em arquitetura e lógica estratégica de negócios.
+                </p>
+            </article>
+
+            <article class="noticia-item">
+                <span class="noticia-categoria">Ciência</span>
+                <h2 class="noticia-titulo">Telescópio Espacial Identifica Atmosfera Rica em Vapor d'Água em Exoplaneta</h2>
+                <div class="noticia-meta">
+                    Publicado em: <time class="noticia-data" datetime="2026-10-07">07/10/2026</time> | 
+                    Por: <span class="noticia-autor">Carlos Eduardo Ramos</span>
+                </div>
+                <p class="noticia-resumo">
+                    Astrônomos confirmam dados espectrais sem precedentes de um planeta situado a 120 anos-luz, abrindo novas fronteiras sobre mundos potencialmente habitáveis.
+                </p>
+            </article>
+
+            <article class="noticia-item">
+                <span class="noticia-categoria">Tecnologia</span>
+                <h2 class="noticia-titulo">Mercado de Cibersegurança Alerta para Golpes Usando Voz Sintética</h2>
+                <div class="noticia-meta">
+                    Publicado em: <time class="noticia-data" datetime="2026-10-06">06/10/2026</time> | 
+                    Por: <span class="noticia-autor">Lucas Penteado</span>
+                </div>
+                <p class="noticia-resumo">
+                    Especialistas recomendam autenticação em múltiplos fatores e canais adicionais de confirmação após aumento de incidentes de clonagem de áudio.
+                </p>
+            </article>
+
+            <article class="noticia-item">
+                <span class="noticia-categoria">Negócios</span>
+                <h2 class="noticia-titulo">Investimentos em Startups de Energia Limpa Crescem 35% no Ano</h2>
+                <div class="noticia-meta">
+                    Publicado em: <time class="noticia-data" datetime="2026-10-05">05/10/2026</time> | 
+                    Por: <span class="noticia-autor">Fernanda Rocha</span>
+                </div>
+                <p class="noticia-resumo">
+                    Transição energética e exigências ESG impulsionam rodadas de investimento focadas em baterias sustentáveis e captura de carbono.
+                </p>
+            </article>
+
+            <article class="noticia-item">
+                <span class="noticia-categoria">Tecnologia</span>
+                <h2 class="noticia-titulo">Nova Geração de Chips Quânticos Atinge Estabilidade Recorde</h2>
+                <div class="noticia-meta">
+                    Publicado em: <time class="noticia-data" datetime="2026-10-04">04/10/2026</time> | 
+                    Por: <span class="noticia-autor">Mariana Silveira</span>
+                </div>
+                <p class="noticia-resumo">
+                    Pesquisadores demonstraram correção de erros em tempo real em processador quântico de 256 qubits com taxa de coerência significativamente superior.
+                </p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

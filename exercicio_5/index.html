@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistrô Sabor & Arte - Cardápio</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #332d27;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 2px dashed #c49b66;
+            padding-bottom: 20px;
+        }
+        .categoria-secao {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 25px;
+            border-left: 5px solid #c49b66;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+        }
+        .categoria-titulo {
+            font-size: 1.6em;
+            color: #8c5b23;
+            margin-top: 0;
+            margin-bottom: 18px;
+            border-bottom: 1px solid #f0e6d9;
+            padding-bottom: 8px;
+        }
+        .itens-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .item-cardapio {
+            padding-bottom: 12px;
+            border-bottom: 1px dotted #e6dcce;
+        }
+        .item-cardapio:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .item-cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .item-nome {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #2b2520;
+            margin: 0;
+        }
+        .item-preco {
+            font-weight: bold;
+            color: #8c5b23;
+            font-size: 1.1em;
+        }
+        .item-descricao {
+            font-size: 0.9em;
+            color: #6e645a;
+            margin: 4px 0 0 0;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bistrô Sabor & Arte</h1>
+            <p>Gastronomia contemporânea com ingredientes selecionados</p>
+        </header>
+
+        <main id="cardapio">
+            <!-- Seção 1: Pratos -->
+            <section class="categoria-secao" id="secao-pratos">
+                <h2 class="categoria-titulo">Pratos</h2>
+                <div class="itens-lista">
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Risoto de Cogumelos Silvestres</h3>
+                            <span class="item-preco">R$ 68,00</span>
+                        </div>
+                        <p class="item-descricao">Arroz arbóreo cremoso com mix de shitake, shimeji e finalizado com azeite trufado e parmesão ralado na hora.</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Filé Mignon ao Molho de Vinho Tinto</h3>
+                            <span class="item-preco">R$ 84,00</span>
+                        </div>
+                        <p class="item-descricao">Medalhão grelhado ao ponto, acompanhado de aligot de batata cremosa e redução de vinho Malbec.</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Salmão em Crosta de Ervas</h3>
+                            <span class="item-preco">R$ 76,00</span>
+                        </div>
+                        <p class="item-descricao">Filé de salmão fresco com crosta de ervas finas e castanhas, servido com legumes salteados na manteiga.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Seção 2: Bebidas -->
+            <section class="categoria-secao" id="secao-bebidas">
+                <h2 class="categoria-titulo">Bebidas</h2>
+                <div class="itens-lista">
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Suco Natural de Laranja com Maracujá</h3>
+                            <span class="item-preco">R$ 14,00</span>
+                        </div>
+                        <p class="item-descricao">Suco integral 100% fruta, sem adição de açúcar ou conservantes (400ml).</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Soda Italiana de Frutas Vermelhas</h3>
+                            <span class="item-preco">R$ 18,00</span>
+                        </div>
+                        <p class="item-descricao">Água com gás artesanal gaseificada na hora com xarope natural de framboesa, amora e folhas de hortelã.</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Vinho Tinto Reserva Cabernet Sauvignon</h3>
+                            <span class="item-preco">R$ 110,00</span>
+                        </div>
+                        <p class="item-descricao">Garrafa de 750ml com notas de frutas vermelhas maduras, baunilha e taninos aveludados.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Seção 3: Sobremesas -->
+            <section class="categoria-secao" id="secao-sobremesas">
+                <h2 class="categoria-titulo">Sobremesas</h2>
+                <div class="itens-lista">
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Petit Gâteau com Sorvete de Baunilha</h3>
+                            <span class="item-preco">R$ 28,00</span>
+                        </div>
+                        <p class="item-descricao">Bolo quente de chocolate belga meio amargo com recheio cremoso, servido com bola de sorvete artesanal.</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Tiramisù Tradicional Italiano</h3>
+                            <span class="item-preco">R$ 26,00</span>
+                        </div>
+                        <p class="item-descricao">Camadas de biscoito champanhe embebido em café espresso e licor, creme de mascarpone e cacau em pó 70%.</p>
+                    </article>
+
+                    <article class="item-cardapio">
+                        <div class="item-cabecalho">
+                            <h3 class="item-nome">Panna Cotta com Frutas do Bosque</h3>
+                            <span class="item-preco">R$ 24,00</span>
+                        </div>
+                        <p class="item-descricao">Sobremesa delicada de nata aromatizada com fava de baunilha e calda artesanal de amoras e mirtilos.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

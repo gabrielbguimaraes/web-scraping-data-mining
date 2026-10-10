@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore Informática - Catálogo de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc;
+            color: #2d3748;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .produto-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 18px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .produto-nome {
+            font-size: 1.2em;
+            margin-top: 0;
+            color: #1a202c;
+        }
+        .info-linha {
+            margin: 6px 0;
+            font-size: 0.95em;
+        }
+        .preco {
+            font-size: 1.25em;
+            color: #2b6cb0;
+            font-weight: bold;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .status-disponivel {
+            background-color: #c6f6d5;
+            color: #22543d;
+        }
+        .status-baixo {
+            background-color: #feebc8;
+            color: #744210;
+        }
+        .status-indisponivel {
+            background-color: #fed7d7;
+            color: #742a2a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TechStore Informática</h1>
+            <p>Os melhores componentes e periféricos para o seu setup</p>
+        </header>
+
+        <main class="produtos-grid" id="lista-produtos">
+            <article class="produto-card">
+                <h2 class="produto-nome">Processador Ryzen 7 5800X</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">AMD</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Processadores</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 1.399,90</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-disponivel">Disponível</span></p>
+            </article>
+
+            <article class="produto-card">
+                <h2 class="produto-nome">Placa de Vídeo GeForce RTX 4070 12GB</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">NVIDIA</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Placas de Vídeo</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 3.899,00</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-baixo">Estoque baixo</span></p>
+            </article>
+
+            <article class="produto-card">
+                <h2 class="produto-nome">SSD 1TB 980 Pro NVMe M.2</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">Samsung</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Armazenamento</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 589,90</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-disponivel">Disponível</span></p>
+            </article>
+
+            <article class="produto-card">
+                <h2 class="produto-nome">Memória RAM Fury Beast 16GB DDR4 3200MHz</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">Kingston</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Memória RAM</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 259,00</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-indisponivel">Indisponível</span></p>
+            </article>
+
+            <article class="produto-card">
+                <h2 class="produto-nome">Teclado Mecânico BlackWidow V4</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">Razer</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Periféricos</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 649,99</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-disponivel">Disponível</span></p>
+            </article>
+
+            <article class="produto-card">
+                <h2 class="produto-nome">Monitor Gamer 27" 165Hz IPS</h2>
+                <p class="info-linha"><strong>Fabricante:</strong> <span class="produto-fabricante">Dell</span></p>
+                <p class="info-linha"><strong>Categoria:</strong> <span class="produto-categoria">Monitores</span></p>
+                <p class="info-linha"><strong>Preço:</strong> <span class="produto-preco">R$ 1.299,00</span></p>
+                <p class="info-linha"><strong>Situação:</strong> <span class="produto-estoque status-badge status-baixo">Estoque baixo</span></p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

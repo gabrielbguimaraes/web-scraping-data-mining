@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central - Acervo de Livros</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fcfbf8;
+            color: #2b2b2b;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #8b5a2b;
+            padding-bottom: 15px;
+        }
+        .livro-card {
+            background: #fff;
+            border: 1px solid #e8e3d9;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .livro-titulo {
+            font-size: 1.35em;
+            color: #4a2c11;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .livro-dados {
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            margin: 4px 0;
+        }
+        .badge-situacao {
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .badge-disponivel {
+            color: #1b5e20;
+            background-color: #e8f5e9;
+        }
+        .badge-emprestado {
+            color: #b71c1c;
+            background-color: #ffebee;
+        }
+        .palavras-chave-titulo {
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            color: #555;
+        }
+        ul.palavras-chave {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.9em;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Biblioteca Central Universitária</h1>
+            <p>Consulta e Gestão do Acervo Bibliográfico</p>
+        </header>
+
+        <main id="acervo-livros">
+            <article class="livro-card">
+                <h2 class="livro-titulo">Dom Casmurro</h2>
+                <p class="livro-dados"><strong>Autor:</strong> <span class="livro-autor">Machado de Assis</span></p>
+                <p class="livro-dados"><strong>Ano de Publicação:</strong> <span class="livro-ano">1899</span></p>
+                <p class="livro-dados"><strong>Gênero:</strong> <span class="livro-genero">Romance / Realismo</span></p>
+                <p class="livro-dados"><strong>Situação:</strong> <span class="livro-situacao badge-situacao badge-disponivel">Disponível</span></p>
+                <div class="palavras-chave-titulo">Palavras-chave:</div>
+                <ul class="palavras-chave">
+                    <li class="tag-palavra">Literatura Brasileira</li>
+                    <li class="tag-palavra">Capitu</li>
+                    <li class="tag-palavra">Ciúme e Ambiguidade</li>
+                </ul>
+            </article>
+
+            <article class="livro-card">
+                <h2 class="livro-titulo">1984</h2>
+                <p class="livro-dados"><strong>Autor:</strong> <span class="livro-autor">George Orwell</span></p>
+                <p class="livro-dados"><strong>Ano de Publicação:</strong> <span class="livro-ano">1949</span></p>
+                <p class="livro-dados"><strong>Gênero:</strong> <span class="livro-genero">Ficção Distópica</span></p>
+                <p class="livro-dados"><strong>Situação:</strong> <span class="livro-situacao badge-situacao badge-emprestado">Emprestado</span></p>
+                <div class="palavras-chave-titulo">Palavras-chave:</div>
+                <ul class="palavras-chave">
+                    <li class="tag-palavra">Totalitarismo</li>
+                    <li class="tag-palavra">Vigilância Estatal</li>
+                    <li class="tag-palavra">Grande Irmão</li>
+                </ul>
+            </article>
+
+            <article class="livro-card">
+                <h2 class="livro-titulo">O Código Limpo (Clean Code)</h2>
+                <p class="livro-dados"><strong>Autor:</strong> <span class="livro-autor">Robert C. Martin</span></p>
+                <p class="livro-dados"><strong>Ano de Publicação:</strong> <span class="livro-ano">2008</span></p>
+                <p class="livro-dados"><strong>Gênero:</strong> <span class="livro-genero">Tecnologia e Engenharia de Software</span></p>
+                <p class="livro-dados"><strong>Situação:</strong> <span class="livro-situacao badge-situacao badge-disponivel">Disponível</span></p>
+                <div class="palavras-chave-titulo">Palavras-chave:</div>
+                <ul class="palavras-chave">
+                    <li class="tag-palavra">Boas Práticas de Programação</li>
+                    <li class="tag-palavra">Refatoração</li>
+                    <li class="tag-palavra">Arquitetura de Software</li>
+                </ul>
+            </article>
+
+            <article class="livro-card">
+                <h2 class="livro-titulo">Cem Anos de Solidão</h2>
+                <p class="livro-dados"><strong>Autor:</strong> <span class="livro-autor">Gabriel García Márquez</span></p>
+                <p class="livro-dados"><strong>Ano de Publicação:</strong> <span class="livro-ano">1967</span></p>
+                <p class="livro-dados"><strong>Gênero:</strong> <span class="livro-genero">Realismo Mágico</span></p>
+                <p class="livro-dados"><strong>Situação:</strong> <span class="livro-situacao badge-situacao badge-emprestado">Emprestado</span></p>
+                <div class="palavras-chave-titulo">Palavras-chave:</div>
+                <ul class="palavras-chave">
+                    <li class="tag-palavra">Macondo</li>
+                    <li class="tag-palavra">Família Buendía</li>
+                    <li class="tag-palavra">Literatura Latino-americana</li>
+                </ul>
+            </article>
+
+            <article class="livro-card">
+                <h2 class="livro-titulo">Entendendo Algoritmos</h2>
+                <p class="livro-dados"><strong>Autor:</strong> <span class="livro-autor">Aditya Bhargava</span></p>
+                <p class="livro-dados"><strong>Ano de Publicação:</strong> <span class="livro-ano">2016</span></p>
+                <p class="livro-dados"><strong>Gênero:</strong> <span class="livro-genero">Ciência da Computação</span></p>
+                <p class="livro-dados"><strong>Situação:</strong> <span class="livro-situacao badge-situacao badge-disponivel">Disponível</span></p>
+                <div class="palavras-chave-titulo">Palavras-chave:</div>
+                <ul class="palavras-chave">
+                    <li class="tag-palavra">Estruturas de Dados</li>
+                    <li class="tag-palavra">Algoritmos de Busca e Ordenação</li>
+                    <li class="tag-palavra">Guia Ilustrado</li>
+                </ul>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

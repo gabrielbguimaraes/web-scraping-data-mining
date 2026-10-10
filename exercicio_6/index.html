@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSummit 2026 - Agenda de Eventos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+        .evento-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 22px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+        }
+        .evento-nome {
+            color: #f8fafc;
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .evento-info {
+            margin: 6px 0;
+            font-size: 0.95em;
+            color: #cbd5e1;
+        }
+        .evento-info strong {
+            color: #94a3b8;
+        }
+        .palestrantes-container {
+            margin: 10px 0;
+        }
+        .palestrantes-lista {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .palestrante-tag {
+            background-color: #334155;
+            color: #38bdf8;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 0.88em;
+            font-weight: 500;
+        }
+        .inscricao-area {
+            margin-top: 16px;
+        }
+        .btn-inscricao {
+            display: inline-block;
+            background-color: #0284c7;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+        .btn-inscricao:hover {
+            background-color: #0369a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TechSummit 2026</h1>
+            <p>Conferência Internacional de Inovação, Engenharia e Ciência de Dados</p>
+        </header>
+
+        <main id="agenda-eventos">
+            <!-- Evento 1: 1 Palestrante -->
+            <article class="evento-card">
+                <h2 class="evento-nome">Keynote de Abertura: O Futuro da Inteligência Artificial Geral</h2>
+                <p class="evento-info"><strong>Data:</strong> <span class="evento-data">15/11/2026</span></p>
+                <p class="evento-info"><strong>Horário:</strong> <span class="evento-horario">09:00 - 10:30</span></p>
+                <p class="evento-info"><strong>Local:</strong> <span class="evento-local">Auditório Principal (Auditório Turing)</span></p>
+                <div class="evento-info palestrantes-container">
+                    <strong>Palestrante(s):</strong>
+                    <ul class="palestrantes-lista">
+                        <li class="palestrante-tag">Dra. Helena Vasconcelos</li>
+                    </ul>
+                </div>
+                <div class="inscricao-area">
+                    <a class="btn-inscricao link-inscricao" href="https://techsummit2026.org/inscricoes/keynote-ia">Garantir Vaga no Keynote</a>
+                </div>
+            </article>
+
+            <!-- Evento 2: Múltiplos Palestrantes (2 palestrantes) -->
+            <article class="evento-card">
+                <h2 class="evento-nome">Painel Debate: Arquiteturas de Microsserviços e Computação em Nuvem</h2>
+                <p class="evento-info"><strong>Data:</strong> <span class="evento-data">15/11/2026</span></p>
+                <p class="evento-info"><strong>Horário:</strong> <span class="evento-horario">11:00 - 12:30</span></p>
+                <p class="evento-info"><strong>Local:</strong> <span class="evento-local">Sala VIP de Conferências</span></p>
+                <div class="evento-info palestrantes-container">
+                    <strong>Palestrante(s):</strong>
+                    <ul class="palestrantes-lista">
+                        <li class="palestrante-tag">Eng. Rodrigo Alcantara</li>
+                        <li class="palestrante-tag">Profa. Camila Bittencourt</li>
+                    </ul>
+                </div>
+                <div class="inscricao-area">
+                    <a class="btn-inscricao link-inscricao" href="https://techsummit2026.org/inscricoes/painel-cloud">Inscrever-se no Painel de Cloud</a>
+                </div>
+            </article>
+
+            <!-- Evento 3: 1 Palestrante -->
+            <article class="evento-card">
+                <h2 class="evento-nome">Workshop Prático: Engenharia de Dados com Apache Spark e Delta Lake</h2>
+                <p class="evento-info"><strong>Data:</strong> <span class="evento-data">15/11/2026</span></p>
+                <p class="evento-info"><strong>Horário:</strong> <span class="evento-horario">14:00 - 16:30</span></p>
+                <p class="evento-info"><strong>Local:</strong> <span class="evento-local">Laboratório Hacker 03</span></p>
+                <div class="evento-info palestrantes-container">
+                    <strong>Palestrante(s):</strong>
+                    <ul class="palestrantes-lista">
+                        <li class="palestrante-tag">Alexandre Magno Ferreira</li>
+                    </ul>
+                </div>
+                <div class="inscricao-area">
+                    <a class="btn-inscricao link-inscricao" href="https://techsummit2026.org/inscricoes/workshop-spark">Reservar Computador no Lab</a>
+                </div>
+            </article>
+
+            <!-- Evento 4: Múltiplos Palestrantes (3 palestrantes) -->
+            <article class="evento-card">
+                <h2 class="evento-nome">Mesa Redonda: Cibersegurança e Proteção de Dados Críticos em FinTechs</h2>
+                <p class="evento-info"><strong>Data:</strong> <span class="evento-data">16/11/2026</span></p>
+                <p class="evento-info"><strong>Horário:</strong> <span class="evento-horario">10:00 - 11:45</span></p>
+                <p class="evento-info"><strong>Local:</strong> <span class="evento-local">Auditório Ada Lovelace</span></p>
+                <div class="evento-info palestrantes-container">
+                    <strong>Palestrante(s):</strong>
+                    <ul class="palestrantes-lista">
+                        <li class="palestrante-tag">Beatriz Nogueira</li>
+                        <li class="palestrante-tag">Gabriel Fontes</li>
+                        <li class="palestrante-tag">Marcos Vinícius Prado</li>
+                    </ul>
+                </div>
+                <div class="inscricao-area">
+                    <a class="btn-inscricao link-inscricao" href="https://techsummit2026.org/inscricoes/mesa-cybersecurity">Confirmar Presença na Mesa Redonda</a>
+                </div>
+            </article>
+
+            <!-- Evento 5: 1 Palestrante -->
+            <article class="evento-card">
+                <h2 class="evento-nome">Sessão de Encerramento: Carreira Global em Tecnologia e Trabalho Remoto</h2>
+                <p class="evento-info"><strong>Data:</strong> <span class="evento-data">16/11/2026</span></p>
+                <p class="evento-info"><strong>Horário:</strong> <span class="evento-horario">17:00 - 18:30</span></p>
+                <p class="evento-info"><strong>Local:</strong> <span class="evento-local">Auditório Turing</span></p>
+                <div class="evento-info palestrantes-container">
+                    <strong>Palestrante(s):</strong>
+                    <ul class="palestrantes-lista">
+                        <li class="palestrante-tag">Larissa Albuquerque</li>
+                    </ul>
+                </div>
+                <div class="inscricao-area">
+                    <a class="btn-inscricao link-inscricao" href="https://techsummit2026.org/inscricoes/encerramento-carreira">Inscrever-se para a Sessão Final</a>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
